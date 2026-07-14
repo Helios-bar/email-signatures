@@ -58,6 +58,15 @@ function inserisciFirma(event) {
 <img src="https://github.com/Helios-bar/email-signatures/blob/main/logo-simone.gif?raw=true" width="450" height="100" alt="Simone Rossi">
 </a>
         `;
+    } else {
+        // FIRMA GENERICA CON IMMAGINE (FALLBACK)
+        firmaHTML = `
+<br><br>
+<p style="font-family: Book Antiqua, serif; font-style: italic; color: #1f497d; font-size: 13px;">Cordiali saluti | Best Regards | Cordiales Saludos | Melhores Cumprimentos</p> <br>
+<a href="https://www.apes.it" target="_blank" style="text-decoration: none;">
+<img src="https://github.com/Helios-bar/email-signatures/blob/main/generale.gif?raw=true" width="450" height="100" alt="Apes">
+</a>
+        `;
     }
 
     // Incolla la firma se ne ha trovata una
